@@ -1,0 +1,183 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  padding: 10px 20px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  box-shadow: 0 0 10px;
+}
+
+nav {
+  background-color: rgb(51, 51, 59);
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+}
+
+.img-card {
+  width: 400px;
+}
+
+.cardText {
+  text-align: left;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.imgHover:hover {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conciertosCard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner {
+  border-radius: 10px;
+  padding: 20px;
+  width: 210px;
+  height: 150px;
+  background: rgb(26, 26, 26);
+  transition: background 300ms ease-in-out;
+}
+
+.Kard {
+  background: rgb(128 128 128 / 0.2);
+  padding: 3px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+#Black-Card {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.falsoblob {
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.Kard:hover > .inner {
+  background: rgb(26, 26, 26, 0.6);
+  backdrop-filter: blur(80px);
+}
+
+#top-band {
+  position: relative;
+  margin: 100px auto 0;
+  width: 500px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #272727);
+  display: flex;
+  flex-direction: column;
+
+}
+
+#top-band:before, #top-band:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 200%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#top-band:after {
+  filter: blur(20px);
+}
+
+.img-top-band {
+  max-width: 250px; 
+}
+
+.foto-texto{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
